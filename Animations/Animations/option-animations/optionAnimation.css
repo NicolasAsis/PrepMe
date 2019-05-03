@@ -1,10 +1,10 @@
-#fruitB {
+#cutOneB {
     animation: slideFromLeft 500ms ease;
     animation-fill-mode: forwards;
    
 }
 
-#veggieB {
+#cutTwoB {
     animation: slideFromLeft 500ms ease;
     animation-delay:200ms;
     animation-fill-mode: forwards;
@@ -16,7 +16,7 @@
     animation-fill-mode: forwards;
 }
 
-#fruitB, #veggieB, #meatB  {
+#cutOneB, #cutTwoB, #meatB  {
     position: relative;
 }
 
