@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>PrepMe:Cuts</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="../css/PrepMe.css" rel="stylesheet" type="text/css">
+        <link href="../Animations/option-animations/optionAnimation.css" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:500" rel="stylesheet">
+    </head>
+    
+    <body>
+            <div class="pageS">
+                <div class="topBanner ">
+                    <div class="backButDiv">
+                    <img src="../svgs/returnBut.svg" class="backButtons" onclick="prevPage()">
+                    </div>
+                    <div class="hambut" onclick="OpenMenu()">
+                        <img src="../svgs/knife01.svg" class="KnifeSvg" id="knife1">
+                        <img src="../svgs/knife02.svg" class="KnifeSvg" id="knife2">
+                        <img src="../svgs/knife03.svg" class="KnifeSvg" id="knife3">
+                    </div>
+                </div>
+                <div id="menuBG">
+                    <div id="menu">
+                        <div id="logo" class="gradientHeader" ><img src="../svgs/Logo.svg" class="logoicon"></div>
+                        <div id="menulist" class="gradientHeader">
+                            <div class="item"><a href="../Categories/categories.html">Catagories</a></div>
+                            <div class="item"><a href="../Fruits-Page/fruits.html">Type</a> </div>
+                            <div class="item"><a href="../cutsPage/cut_page.html">Cut Type</a></div>
+                        </div>
+                     </div>
+                    <div id="bg" onclick="closeMenu()" ></div>
+                </div>
+                
+                <h3 id="catHeader">Choose cut type</h3>
+                <div id="fruitB" class="catButs"  onclick="oPageBut('1')">
+                            <div class="icon">
+                                <img src="../svgs/cuts_page/Mango_slice.svg" class="svgicon iconSizeIncrease">
+                            </div>
+                            <span class="text">
+                                    Slice
+                            </span>
+                </div>
+                <div id="veggieB" class="catButs"  onclick="oPageBut('2')">
+                    <div class="icon">
+                                <img src="../svgs/cuts_page/Mango_cube.svg" class="svgicon iconSizeIncrease">
+                            </div>
+                            <span class="text">
+                                    Cube
+                            </span>
+                </div>
+                
+                
+                <div class="botBanner .gradientBut">
+                
+                </div>
+            </div>
+        
+            <script src="js/MangoCuts.js"></script>
+            <script src="../general.js"></script>
+    </body>
+</html>

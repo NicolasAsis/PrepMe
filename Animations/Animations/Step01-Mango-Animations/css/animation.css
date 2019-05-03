@@ -1,0 +1,130 @@
+
+body {
+    margin:0px;
+    padding:0px;
+}
+
+.animtionElement {
+    overflow: hidden;
+    position:absolute;
+    top:0px;
+    left:0px;
+    width:100%;
+    height:100%;
+    margin:auto;
+    
+}
+
+#Knife {
+   opacity:0;
+   animation:knifemovingIn 3s ease;
+   animation-delay:1s;
+}
+
+
+.mangoRight {
+/*    animation:mangoComing 500ms ease;*/
+    animation:MangoSplitRight 2s ease;
+    animation-delay:2s;
+    animation-fill-mode: forwards;
+}
+
+.mangoMiddle {
+/*    animation:mangoComing 500ms ease;*/
+    animation:MangoSplitMiddle 3s ease;
+    animation-delay:3.5s;
+    animation-fill-mode: forwards;
+
+}
+
+
+
+/*      =========== ANIMATIONS ===========      */
+
+/*              mango coming in             */
+
+@keyframes mangoComing {   
+    0% {left:250px;
+        opacity:0;}
+    
+    100% {left:0px;
+          opacity:1;}
+}
+
+/*           knife moving            */
+
+@keyframes knifemovingIn {
+    
+    0% {
+        top:0px;
+        left:250px;
+        opacity:0;
+    }
+ 
+    25% {top:0px;
+         left:10px;
+         opacity:1;
+    }
+    
+    50% {
+        left:10px;
+        top:100px;
+        opacity:1;
+    }
+    
+    75% {
+         top:0px;
+         left:-15px;
+         opacity:1;
+         }
+    
+    85% {
+         top:100px;
+         left:-15px;
+         opacity:1;
+         }
+    
+    100% {
+          top:100px;
+          left:-15px;
+          opacity:0;
+         }
+}
+
+
+/*              spliting the mango          */
+
+/*              spliting the right piece mango          */
+@keyframes MangoSplitRight {
+    
+    0% {
+        left:0px;
+        }
+    
+    100% {
+        left:30px;
+          }
+}
+
+
+/*       spliting and removing the middle piece mango       */
+@keyframes MangoSplitMiddle {
+
+    0% {left:0px;
+        opacity:1;
+        }
+    
+    50% {
+        left:15px; 
+         opacity:1; }
+    
+    100%{
+        top:-120px;
+        left:15px;
+        opacity:0;
+        
+    }
+
+}
+
+

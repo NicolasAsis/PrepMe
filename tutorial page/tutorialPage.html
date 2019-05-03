@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>PrepMe - Tutorial Page</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="../css/PrepMe.css" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat|Roboto" rel="stylesheet">
+        <link href="../Animations/Step01-Mango-Animations/css/animation.css" rel="stylesheet" type="text/css">
+    </head>
+    
+    <body>
+        <div class="pageS">
+            <div class="topBanner ">
+                    <div class="backButDiv">
+                    <img src="../svgs/returnBut.svg" class="backButtons" onclick="prevPage()">
+                    </div>
+                    <div class="hambut">
+                        <img src="../svgs/hamMenu.svg" class="hamicon">
+                    </div>
+                </div>
+                
+            <h2 id="stepText1">Step 1</h2>
+            <h3 id="stepText2">Find the stem</h3>
+                
+            <div id="tutStepsDiv">
+                <div class="tutButs">
+                    <img src="../svgs/leftBut.svg" alt="Left Button" id="leftBut" onclick="lButClick()"/>
+                </div>
+                <div id="tutAnim">
+                
+                
+                    <div class="animation" >
+                        <div id="step1_animation">
+                                <img src="../Animations/svg/step01/cutting-board.svg" id="cuttingBoard" class="animtionElement"> 
+                                <img src="../Animations/svg/step01/mango-middle.svg" id="MangoMiddle" class="animtionElement mango mangoMiddle">
+                                <img src="../Animations/svg/step01/mango-left.svg" id="MangoLeft" class="animtionElement mango">
+                                <img src="../Animations/svg/step01/mango-right.svg"  class="animtionElement mango mangoRight">
+                                <img src="../Animations/svg/step01/knife.svg" id="Knife" class="animtionElement">
+                        </div>
+                        <div id="step2_animation" class="stepAnim">
+                                <img src="../Animations/Mango%20Slices/step2.svg" id="mSlices2">
+                        </div>
+                    </div>
+                    
+                    
+                </div>
+                <div class="tutButs">
+                    <img src="../svgs/rightBut.svg" alt="Right Button" id="rightBut" onclick="rButClick()"/>
+                </div>
+            </div>
+            
+            <div id="tutCircleDiv">
+                <div class="tutCircles" id="tutCircOne"></div>
+                <div class="tutCircles" id="tutCircTwo"></div>
+                <div class="tutCircles" id="tutCircThree"></div>
+                <div class="tutCircles" id="tutCircFour"></div>
+            </div>
+            
+            <div id="tutTextDiv"><p>Face mango the thin side is facing you, and slice off the half an inch to one side of mango.</p></div>
+                
+            <div class="finishBut gradientBG" onclick="finishTut()">
+            <b>FINISH</b>
+            </div>
+        </div>
+        
+        <script src="js/tutorialPage.js"></script>
+        <script src="../general.js"></script>
+    </body>
+</html>
