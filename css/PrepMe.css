@@ -1,4 +1,4 @@
-/* TABLE OF CONTENTS 
+/* TABLE OF CONTENTS
  1) GENERAL
  2) BANNERS
  3) LOADING PAGE
@@ -69,7 +69,7 @@ a {
 
 /* ------ BANNERS ------ */
 
-.pageS {    
+.pageS {
             overflow:hidden;
             width:355px;
             height:667px;
@@ -174,7 +174,7 @@ a {
             height:90px;
             justify-content: center;
 }
-/* 
+/*
 #descrip {
           opacity:0;
           color:white;
@@ -182,7 +182,7 @@ a {
           padding:10px;
           margin-top:1rem;
           font-size: 0.8rem;
-          
+
 } */
 
 
@@ -206,7 +206,7 @@ a {
         font-size:1em;
         margin-top: 15rem;
         cursor:pointer;
-} 
+}
 
 /*
 #startBut:hover {
@@ -230,7 +230,7 @@ a {
 
 .wrapper {
     width:70%;
-    height:70%; 
+    height:70%;
     display:grid;
     grid-template-columns: 1fr 1fr;
     grid-column-gap: 20px;
@@ -259,7 +259,7 @@ a {
 
 .catButs {
         display:flex;
-        left:-500px; 
+        left:-500px;
         width:75%;
         height:15%;
         margin-top:30px;
@@ -269,7 +269,7 @@ a {
         justify-content:center;
         align-items:center;
         flex-direction: row;
-        background-color: #eae9e8; 
+        background-color: #eae9e8;
 
 }
 
@@ -348,7 +348,7 @@ form {
       margin: 0;
       padding: 0;
       list-style-type: none;
-      align-items:left; 
+      align-items:left;
       justify-content: center;
       position: absolute;
 }
@@ -386,16 +386,16 @@ form {
     cursor:pointer;
 }
 
-.title { 
+.title {
 
     font-weight:bold;
     font-size:12pt;
     color:#3D3D3D;
-    
+
 }
 
 label {
-    
+
     margin-left:10px;
 }
 
@@ -598,7 +598,7 @@ label {
 
 
 /* menus bg to blur*/
-#bg { 
+#bg {
     width:40%;
     float:left;
     height:100%;
