@@ -26,7 +26,7 @@
                     <div id="menu">
                         <div id="logo" class="gradientHeader" ><img src="../svgs/Logo.svg" class="logoicon"></div>
                         <div id="menulist" class="gradientHeader">
-                            <div class="item"><a href="../Categories/categories.html">Catagories</a></div>
+                            <div class="item"><a href="../Categories/categories.html">Categories</a></div>
                             <div class="item"><a href="../Fruits-Page/fruits.html">Type</a> </div>
                             <div class="item"><a href="../cutsPage/cut_page.html">Cut Type</a></div>
                         </div>
@@ -34,20 +34,22 @@
                     <div id="bg" onclick="closeMenu()" ></div>
                 </div>
                 
-                <h3 id="catHeader">Choose cut type</h3>
-                <div id="fruitB" class="catButs"  onclick="oPageBut('1')">
+                
+                <h3 class="catHeader">Choose Cut Type</h3>
+                
+                <div id="cutOneB" class="catButs" onclick="ChangeCut('CutOne')">
                             <div class="icon">
-                                <img src="../svgs/cuts_page/Mango_slice.svg" class="svgicon iconSizeIncrease">
+                                <img src="../svgs/cuts_page/Mango_slice.svg" class="svgicon iconSizeIncrease" id="cutOneIcon">
                             </div>
-                            <span class="text">
+                            <span class="text" id="cutOneText">
                                     Slice
                             </span>
                 </div>
-                <div id="veggieB" class="catButs"  onclick="oPageBut('2')">
-                    <div class="icon">
-                                <img src="../svgs/cuts_page/Mango_cube.svg" class="svgicon iconSizeIncrease">
+                <div id="cutTwoB" class="catButs" onclick="ChangeCut('CutTwo')">
+                            <div class="icon">
+                                <img src="../svgs/cuts_page/Mango_cube.svg" class="svgicon iconSizeIncrease" id="cutTwoIcon">
                             </div>
-                            <span class="text">
+                            <span class="text" id="cutTwoText">
                                     Cube
                             </span>
                 </div>
@@ -58,7 +60,8 @@
                 </div>
             </div>
         
-            <script src="js/MangoCuts.js"></script>
+<!--            <script src="js/MangoCuts.js"></script>-->
             <script src="../general.js"></script>
+            <script src="../app.js"></script>
     </body>
 </html>

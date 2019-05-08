@@ -3,10 +3,9 @@
  2) BANNERS
  3) LOADING PAGE
  4) CATEGORY PAGE
- 5) SUB CATAGORY PAGE
- 6) CUT TYPE PAGE
- 7) FOOD OVERVIEW PAGE
- 8) TUTORIAL PAGE
+ 5) CUT TYPE PAGE
+ 6) FOOD OVERVIEW PAGE
+ 7) TUTORIAL PAGE
 */
 
 /* ------ GENERAL ------ */
@@ -72,12 +71,12 @@ a {
 
 .pageS {    
             overflow:hidden;
-            width:100vw;
-            height:100vh;
+            width:355px;
+            height:667px;
             position:relative;
             left:0;
             top:0;
-/*            border: 1px solid black;*/
+/*          border: 1px solid black;*/
             display:flex;
             flex-direction:column;
             align-items:center;
@@ -107,9 +106,6 @@ a {
     justify-content: center;
 
 }
-
-
-
 
 #knife1 {
         transition: all 200ms ease-in-out;
@@ -227,7 +223,7 @@ a {
 }
 
 /* ------ CATEGORY PAGE ------ */
-#catHeader {
+.catHeader {
         margin-top:1em;
         margin-bottom:3em;
 }
@@ -253,6 +249,11 @@ a {
     box-shadow:0 4px 2px -2px #d3d3d3;
     cursor:pointer;
     padding:6px;
+}
+
+.svgicon {
+    width:95%;
+    height:95%;
 }
 
 
@@ -289,17 +290,21 @@ a {
     flex:2;
 }
 
+#cutOneB:hover, #cutTwoB:hover {
+    background-color:#c1c0bf;
+}
+
 /*
 #fruitB:hover, #veggieB:hover, #meatB:hover {
     background-color:#c1c0bf;
 }
 */
 
+/*
 #mangoB:hover, #pineappleB:hover, #watermelonB:hover {
     background-color:#c1c0bf;
 }
-
-/* ------ SUB CATAGORY PAGE ------ */
+*/
 
 /* ------ CUT TYPE PAGE ------ */
 
@@ -567,7 +572,7 @@ label {
     height:100%;
     position:absolute;
     z-index:1;
-    margin-right:-220px;
+    margin-right:-500px;
     visibility: hidden;
 }
 
