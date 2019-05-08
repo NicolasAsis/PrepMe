@@ -23,7 +23,7 @@ var OverviewText = document.querySelector("#OverviewText"),
 //PROXY SETUP
 var handler = {
     set:function(obj, props, value){
-        
+
     }
 }
 
@@ -53,49 +53,49 @@ function ChangeCut(text){
 //CHANGE UI
 if(pkg.page == 2){
     if(pkg.fruit == "Mango"){
-        cutOneIcon.src = "../svgs/cuts_page/Mango_slice.svg";
-        cutTwoIcon.src = "../svgs/cuts_page/Mango_cube.svg";
-        
+        cutOneIcon.src = "../svgs/Mango/Mango_slice.svg";
+        cutTwoIcon.src = "../svgs/Mango/Mango_cube.svg";
+
         cutOneText.innerText = "Slice";
         cutTwoText.innerText = "Cube";
     }
-    
+
     else if(pkg.fruit == "Avocado"){
-        cutOneIcon.src = "../svgs/avoIcon.svg";
-        cutTwoIcon.src = "../svgs/avoIcon.svg";
-        
+        cutOneIcon.src = "../svgs/Avocado/avacado_slices2.svg";
+        cutTwoIcon.src = "../svgs/Avocado/avacado_cube2.svg";
+
         cutOneText.innerText = "Slice";
         cutTwoText.innerText = "Cube";
     }
-    
+
       else if(pkg.fruit == "Pomegranate"){
         cutOneIcon.src = "../svgs/pomeIcon.svg";
         cutTwoIcon.src = "../svgs/pomeIcon.svg";
-        
+
         cutOneText.innerText = "Slice";
         cutTwoText.innerText = "Cube";
     }
-    
+
      else if(pkg.fruit == "Pineapple"){
         cutOneIcon.src = "../svgs/pineIcon.svg";
         cutTwoIcon.src = "../svgs/pineIcon.svg";
-        
+
         cutOneText.innerText = "Slice";
         cutTwoText.innerText = "Cube";
     }
-    
+
       else if(pkg.fruit == "Watermelon"){
         cutOneIcon.src = "../svgs/waterIcon.svg";
         cutTwoIcon.src = "../svgs/waterIcon.svg";
-        
+
         cutOneText.innerText = "Slice";
         cutTwoText.innerText = "Cube";
     }
-    
+
     else if(pkg.fruit == "Kiwi"){
         cutOneIcon.src = "../svgs/kiwiIcon.svg";
         cutTwoIcon.src = "../svgs/kiwiIcon.svg";
-        
+
         cutOneText.innerText = "Slice";
         cutTwoText.innerText = "Cube";
     }
@@ -104,10 +104,18 @@ if(pkg.page == 2){
 if(pkg.page == 3){
     if(pkg.fruit == "Mango" && pkg.cut == "CutOne"){
         OverviewText.innerText = pkg.fruit + " Slices";
-        OverviewIcon.src = "../svgs/cuts_page/Mango_slice.svg";
+        OverviewIcon.src = "../svgs/Mango/Mango_slice.svg";
     }
     if(pkg.fruit == "Mango" && pkg.cut == "CutTwo"){
         OverviewText.innerText = pkg.fruit + " Cubes";
-        OverviewIcon.src = "../svgs/cuts_page/Mango_cube.svg";
+        OverviewIcon.src = "../svgs/Mango/Mango_cube.svg";
+    }
+    if(pkg.fruit == "Avocado" && pkg.cut == "CutOne"){
+        OverviewText.innerText = pkg.fruit + " Slices";
+        OverviewIcon.src = "../svgs/Avocado/avocado_slice.svg";
+    }
+    if(pkg.fruit == "Avocado" && pkg.cut == "CutTwo"){
+        OverviewText.innerText = pkg.fruit + " Cubes";
+        OverviewIcon.src = "../svgs/Avocado/avocado_cubes.svg";
     }
 }
