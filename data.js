@@ -1,10 +1,11 @@
 var data = {
-    mango:[
+    "Mango Slices":[
         {
+            step:"1",
             title:"Find the Stem",
-            desc:"blah blah",
-            animation:"blah.anim"
+            animation:
+            desc:"blah blah"
         },
-        
+
     ]
 }
