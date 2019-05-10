@@ -160,7 +160,7 @@ var data = {
           desc:"Put the seeds onto a plate and it's your done!"
       }
       ],
-      "Pineapple Cube":[
+      "Pineapple Cubes":[
         {
           step:"1",
           title:"Cut off top and bottom",
@@ -197,6 +197,44 @@ var data = {
           animation:"",
           desc:""
         },
+      ],
+      "Pineapple Rings": [
+        {
+          step:"1",
+          title:"Cut off top and bottom",
+          animation:"",
+          desc:"Using the knife, cut off about half an inch of the top and bottom of the pineapple."
+        },
+        {
+          step:"2",
+          title:"Trim the sides",
+          animation:"",
+          desc:"Stand the pineapple upright, and cut downward strips, following the contours of the pineapple.  This will skin the pineapple."
+        },
+        {
+          step:"3",
+          title:"Remove the outer skin and  eyes",
+          animation:"",
+          desc:"To remove the outer skin and the eyes, continue to cut long strips all the way around the pineapple. Use a small paring knife to remove any remaining eyes(the holes)."
+        },
+        {
+          step:"4",
+          title:"Slice to rings",
+          animation:"",
+          desc:"Slice crosswise into rings."
+        },
+        {
+          step:"5",
+          title:"Cut out the core",
+          animation:"",
+          desc:" Use a circular cookie cutter to cut out the tough inner core."
+        },
+        {
+          step:"6",
+          title:"Enjoy",
+          animation:"",
+          desc:""
+        }
       ]
 
 
