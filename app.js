@@ -38,6 +38,10 @@ function ChangeFruit(text){
    // setTimeout(function(){
         location.href="../cutsPage/cut_page.html";
    // },2000)
+
+   if(pkg.fruit == "Pomegranate"){
+     ChangeCut("Pomegranate");
+   }
 }
 
 function ChangeCut(text){
@@ -117,5 +121,9 @@ if(pkg.page == 3){
     if(pkg.fruit == "Avocado" && pkg.cut == "CutTwo"){
         OverviewText.innerText = pkg.fruit + " Cubes";
         OverviewIcon.src = "../svgs/Avocado/avocado_cubes.svg";
+    }
+    if(pkg.fruit == "Pomegranate"){
+      OverviewText.innerText = pkg.fruit;
+      OverviewIcon.src = "../svgs/Pomegranate/Pomegranate.svg";
     }
 }
