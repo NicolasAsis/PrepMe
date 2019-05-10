@@ -18,7 +18,8 @@ var cutOneIcon = document.querySelector("#cutOneIcon"),
     cutTwoText = document.querySelector("#cutTwoText");
 
 var OverviewText = document.querySelector("#OverviewText"),
-    OverviewIcon = document.querySelector("#OverviewIcon");
+    OverviewIcon = document.querySelector("#OverviewIcon"),
+    OverviewTools = document.querySelectorAll(".overviewTools");
 
 //PROXY SETUP
 var handler = {
