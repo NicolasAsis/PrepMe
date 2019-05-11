@@ -64,7 +64,7 @@ var data = {
       },
 
     ],
-    "Avacado Cubes":[
+    "Avocado Cubes":[
       {
           step:"1",
           title:"Cut into two halves",
@@ -102,9 +102,9 @@ var data = {
           desc:"Afterwards use a spoon and scoop out cubes out of the outer skin. Put all the slices onto a plate and serve!"
       }
     ],
-    "Avacado Slice":[
+    "AvocadoSlices":[
       {
-          step:"1",
+          step:"Step 1",
           title:"Cut into two halves",
           animation:"",
           desc:"Gently cut around the avocado to separate into two halves. Make sure that you don't cut the seed inside."
@@ -235,7 +235,70 @@ var data = {
           animation:"",
           desc:""
         }
+      ],
+      "Kiwi Wedge": [
+        {
+          step:"1",
+          title:"Cut the ends off the kiwi",
+          animation:"",
+          desc:"Carefully slice off both ends of the fruit, using a small knife."
+        },
+        {
+          step:"2",
+          title:"Insert a spoon between the skin and flesh of the kiwi",
+          animation:"",
+          desc:"Use a regular tablespoon to do this. Insert a spoon between the skin and flesh of the kiwi."
+        },
+        {
+          step:"3",
+          title:"Rotate the spoon around the kiwi, beneath the skin",
+          animation:"",
+          desc:"When the skin is loosen from the fruit. you may need to work on one side of the kiwi first, then switch to the other side to loosen all of the skin."
+        },
+        {
+          step:"4",
+          title:"Slice the kiwi vertically in half",
+          animation:"",
+          desc:"Slice each half again to form little kiwifruit wedges, perfect for fruit salads or on an arranged fruit plate."
+        },
+      ],
+      "Kiwi Design Cut": [
+        {
+          step:"1",
+          title:"Cut the ends off the kiwi",
+          animation:"",
+          desc:"Carefully slice off both ends of the fruit, using a small knife."
+        },
+        {
+          step:"2",
+          title:"Insert a spoon between the skin and flesh of the kiwi",
+          animation:"",
+          desc:"Use a regular tablespoon to do this. Insert a spoon between the skin and flesh of the kiwi."
+        },
+        {
+          step:"3",
+          title:"Rotate the spoon around the kiwi, beneath the skin",
+          animation:"",
+          desc:"When the skin is loosen from the fruit. you may need to work on one side of the kiwi first, then switch to the other side to loosen all of the skin."
+        },
+        {
+          step:"4",
+          title:"Put the knife through the kiwi",
+          animation:"",
+          desc:"Hold the peeled fruit upright and insert the knife diagonally in the middle of the flesh."
+        },
+        {
+          step:"5",
+          title:"Cut a zig zag pattern",
+          animation:"",
+          desc:"Continue making diagonal cuts across the fruit to get a zigzag shape. Make sure that your cuts are deep enough to separate the fruit into two halves once you complete a full round."
+        },
+        {
+        step:"6",
+        title:"Break the fruit into two halves and enjoy",
+        animation:"",
+        desc:""
+        }
       ]
-
 
 }

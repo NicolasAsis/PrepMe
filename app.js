@@ -3,7 +3,8 @@ var pkg = {
     page:0,
     fruit:"",
     cut:"",
-    tutorial:""
+    tutorial:"",
+    curStep:0
 }
 
 var savedPkg = localStorage.getItem("pkg");
@@ -20,6 +21,13 @@ var cutOneIcon = document.querySelector("#cutOneIcon"),
 var OverviewText = document.querySelector("#OverviewText"),
     OverviewIcon = document.querySelector("#OverviewIcon"),
     OverviewTools = document.querySelectorAll(".overviewTools");
+
+var stepText = document.querySelector("#stepText"),
+    titleText = document.querySelector("#titleText"),
+    tutSvg = document.querySelector("#tutSvg"),
+    descDiv = document.querySelector("#descDiv"),
+    tutCircleDiv = document.querySelector("#tutCircleDiv");
+
 
 //PROXY SETUP
 var handler = {
@@ -52,6 +60,16 @@ function ChangeCut(text){
     //something.style.left = "-100vw";
    // setTimeout(function(){
         location.href="../tutorial overview page/overviewpage.html";
+   // },2000)
+}
+
+function TutorialPage(){
+    pkg.tutorial = pkg.fruit + " " + pkg.cut;
+    pkg.page = 4;
+    localStorage.setItem("pkg", JSON.stringify(pkg));
+    //something.style.left = "-100vw";
+   // setTimeout(function(){
+        location.href="../tutorial page/tutorialPage.html";
    // },2000)
 }
 
@@ -126,5 +144,14 @@ if(pkg.page == 3){
     if(pkg.fruit == "Pomegranate"){
       OverviewText.innerText = pkg.fruit;
       OverviewIcon.src = "../svgs/Pomegranate/Pomegranate.svg";
+    }
+}
+
+if(pkg.page == 4){
+    if(pkg.tutorial == "Avocado CutOne"){
+        console.log(data[pkg.fruit+"Slices"][0].step);
+        stepText.innerText = data[pkg.fruit+"Slices"][pkg.curStep].step;
+        titleText.innerText = data[pkg.fruit+"Slices"][pkg.curStep].title;
+        descDiv.innerText = data[pkg.fruit+"Slices"][pkg.curStep].desc;
     }
 }
