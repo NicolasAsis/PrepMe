@@ -15,17 +15,40 @@
                     <div class="backButDiv">
                     <img src="../svgs/returnBut.svg" class="backButtons" onclick="prevPage()">
                     </div>
-                    <div class="hambut">
-                        <img src="../svgs/hamMenu.svg" class="hamicon">
+                    <div class="hambut" onclick="hamBut()">
+                        <img src="../svgs/knife01.svg" class="KnifeSvg" id="knife1">
+                        <img src="../svgs/knife02.svg" class="KnifeSvg" id="knife2">
+                        <img src="../svgs/knife03.svg" class="KnifeSvg" id="knife3">
                     </div>
                 </div>
+            
+            <div class="menuBG">
+                    <div class="menu">
+                        <div id="logo" class="gradientHeader" ><img src="../svgs/Logo.svg" class="logoicon"></div>
+                        <div id="menulist" class="gradientHeader">
+                            <div class="item"><a href="../Categories/categories.html">HOME</a></div>
+                            <div class="item" onclick="dropbox()" id="fruits"><img src="../svgs/dropdownarrow.svg" id="dropdown">FRUITS </div>
+                            
+                            <div class="dropbox">
+                                <div class="item"><a onclick="ChangeFruit('Mango')">MANGO</a></div>
+                                <div class="item"><a onclick="ChangeFruit('Pineapple')">PINEAPPLE</a></div>
+                                <div class="item"><a onclick="ChangeFruit('Kiwi')">KIWI</a></div>
+                                <div class="item"><a onclick="ChangeFruit('Watermelon')">WATERMELON</a></div>
+                                <div class="item"><a onclick="ChangeFruit('Avocado')">AVOCADO</a></div>
+                                <div class="item"><a onclick="ChangeFruit('Pomegranate')">POMERGRANATE</a></div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    
+                </div> 
 
             <h2 id="stepText"></h2>
             <h3 id="titleText"></h3>
 
             <div id="tutStepsDiv">
                 <div class="tutButs">
-                    <img src="../svgs/leftBut.svg" alt="Left Button" id="leftBut" onclick="lButClick()"/>
+                    <img src="../svgs/leftBut.svg" alt="Left Button" id="leftBut" onclick="prevStep()"/>
                 </div>
                 <div id="tutAnim">
 
@@ -38,14 +61,14 @@
                                 <img src="../Animations/svg/step01/knife.svg" id="Knife" class="animtionElement">
                         </div> -->
                         <div id="tutAnimation" class="stepAnim">
-                                <img src="../Animations/Mango%20Slices/step2.svg" id="tutSvg">
+                                <img src="../svgs/Mango/Slice/Mango_step1.svg" id="tutSvg">
                         </div>
                     </div>
 
 
                 </div>
                 <div class="tutButs">
-                    <img src="../svgs/rightBut.svg" alt="Right Button" id="rightBut" onclick="rButClick()"/>
+                    <img src="../svgs/rightBut.svg" alt="Right Button" id="rightBut" onclick="NextStep()"/>
                 </div>
             </div>
 
@@ -63,7 +86,7 @@
             </div>
         </div>
 
-        <script src="js/tutorialPage.js"></script>
+<!--        <script src="js/tutorialPage.js"></script>-->
         <script src="../general.js"></script>
         <script src="../data.js"></script>
         <script src="../app.js"></script>

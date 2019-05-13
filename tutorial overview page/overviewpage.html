@@ -16,53 +16,65 @@
                     <img src="../svgs/returnBut.svg" class="backButtons" onclick="prevPage()">
                     </div>
 
-                    <div class="hambut" onclick="OpenMenu()">
+                    <div class="hambut" onclick="hamBut()">
                         <img src="../svgs/knife01.svg" class="KnifeSvg" id="knife1">
                         <img src="../svgs/knife02.svg" class="KnifeSvg" id="knife2">
                         <img src="../svgs/knife03.svg" class="KnifeSvg" id="knife3">
                     </div>
                 </div>
-
-                <div id="menuBG">
-                    <div id="menu">
+                
+                 <div class="menuBG">
+                    <div class="menu">
                         <div id="logo" class="gradientHeader" ><img src="../svgs/Logo.svg" class="logoicon"></div>
                         <div id="menulist" class="gradientHeader">
-                            <div class="item"><a href="../Categories/categories.html">Categories</a></div>
-                            <div class="item"><a href="../Fruits-Page/fruits.html">Type</a> </div>
-                            <div class="item"><a href="../cutsPage/cut_page.html">Cut Type</a></div>
+                            <div class="item"><a href="../Categories/categories.html">HOME</a></div>
+                            <div class="item" onclick="dropbox()" id="fruits"><img src="../svgs/dropdownarrow.svg" id="dropdown">FRUITS </div>
+                            
+                            <div class="dropbox">
+                                <div class="item"><a onclick="ChangeFruit('Mango')">MANGO</a></div>
+                                <div class="item"><a onclick="ChangeFruit('Pineapple')">PINEAPPLE</a></div>
+                                <div class="item"><a onclick="ChangeFruit('Kiwi')">KIWI</a></div>
+                                <div class="item"><a onclick="ChangeFruit('Watermelon')">WATERMELON</a></div>
+                                <div class="item"><a onclick="ChangeFruit('Avocado')">AVOCADO</a></div>
+                                <div class="item"><a onclick="ChangeFruit('Pomegranate')">POMERGRANATE</a></div>
+                            </div>
+                            
                         </div>
-                     </div>
-                    <div id="bg" onclick="closeMenu()" ></div>
+                    </div>
+                    
                 </div>
 
-
-
                 <div class="MangoAlert">
+                    <div class="closebut">x</div>
                     <img src="../svgs/holdOn.svg" class="holdOn">
                     <div id="mAlertTop">HOLD ON</div>
                     <div id="mAlertBot">You can't prep without the tools! Make sure you have all the tools.</div>
                 </div>
 
-                <h3 class="catHeader" id="OverviewText">Basic Prep</h3>
+                <h3 class="catHeader" id="OverviewText"></h3>
                 <div class="foodDisplay">
-                    <iframe src="../svgs/Mango.svg" class="svg" frameborder="0" id="OverviewIcon"></iframe>
+                    <iframe src="" class="svg" frameborder="0" id="OverviewIcon"></iframe>
                 </div>
 
-                <div class="tools">
+                 <div class="tools">
                     <span class="title">Tools Required</span>
-              <ul class="unstyled centered">
-                    <li>
-                        <input type="checkbox" class="costomCheckBox" id="overviewBut1"><label class="overviewTools">Knife</label>
-                    </li>
-                    <li>
-                        <input type="checkbox" class="costomCheckBox" id="overviewBut2"><label class="overviewTools">Cutting Board</label>
-                    </li>
-              </ul>
+                    <ul class="list centered">
+                        <div class="checkitm">
+                            <input type="checkbox" id="overviewBut1">
+                            <label>Knife</label>
+                        </div>
+                        <div class="checkitm">
+                            <input type="checkbox" id="overviewBut2">
+                            <label class="itm">Cutting Board</label>
+                        </div>
+                  
+                  
+                    </ul>       
                 </div>
-
+                
                 <div class="time">
                         <span class="title">Prep Time</span>
-                        <label>2 min</label>
+                        <label>3 min</label>
                 </div>
 
                 <div class="startBut gradientBut" onclick="TutorialPage()">START</div>
@@ -72,7 +84,7 @@
                 </div>
             </div>
 
-        <script src="../cutsPage/js/MangoCuts.js"></script>
+<!--        <script src="../cutsPage/js/MangoCuts.js"></script>-->
         <script src="../general.js"></script>
         <script src="../data.js"></script>
         <script src="../app.js"></script>

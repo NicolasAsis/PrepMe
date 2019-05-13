@@ -16,30 +16,42 @@
                     <div class="backButDiv">
                     <img src="../svgs/returnBut.svg" class="backButtons" onclick="prevPage()">
                     </div>
-                    <div class="hambut" onclick="OpenMenu()">
+                    <div class="hambut" onclick="hamBut()">
                         <img src="../svgs/knife01.svg" class="KnifeSvg" id="knife1">
                         <img src="../svgs/knife02.svg" class="KnifeSvg" id="knife2">
                         <img src="../svgs/knife03.svg" class="KnifeSvg" id="knife3">
                     </div>
                 </div>
-                <div id="menuBG">
-                    <div id="menu">
+                
+                
+                 <div class="menuBG">
+                    <div class="menu">
                         <div id="logo" class="gradientHeader" ><img src="../svgs/Logo.svg" class="logoicon"></div>
                         <div id="menulist" class="gradientHeader">
-                            <div class="item"><a href="../Categories/categories.html">Categories</a></div>
-                            <div class="item"><a href="../Fruits-Page/fruits.html">Type</a> </div>
-                            <div class="item"><a href="../cutsPage/cut_page.html">Cut Type</a></div>
+                            <div class="item"><a href="../Categories/categories.html">HOME</a></div>
+                            <div class="item" onclick="dropbox()" id="fruits"><img src="../svgs/dropdownarrow.svg" id="dropdown">FRUITS </div>
+                            
+                            <div class="dropbox">
+                                <div class="item"><a onclick="ChangeFruit('Mango')">MANGO</a></div>
+                                <div class="item"><a onclick="ChangeFruit('Pineapple')">PINEAPPLE</a></div>
+                                <div class="item"><a onclick="ChangeFruit('Kiwi')">KIWI</a></div>
+                                <div class="item"><a onclick="ChangeFruit('Watermelon')">WATERMELON</a></div>
+                                <div class="item"><a onclick="ChangeFruit('Avocado')">AVOCADO</a></div>
+                                <div class="item"><a onclick="ChangeFruit('Pomegranate')">POMERGRANATE</a></div>
+                            </div>
+                            
                         </div>
-                     </div>
-                    <div id="bg" onclick="closeMenu()" ></div>
+                    </div>
+                    
                 </div>
+                
 
 
                 <h3 class="catHeader">Choose Cut Type</h3>
 
                 <div id="cutOneB" class="catButs" onclick="ChangeCut('CutOne')">
                             <div class="icon">
-                                <img src="../svgs/Mango/Mango_slice.svg" class="svgicon iconSizeIncrease" id="cutOneIcon">
+                                <img src="" class="svgicon iconSizeIncrease" id="cutOneIcon">
                             </div>
                             <span class="text" id="cutOneText">
                                     Slice
@@ -47,7 +59,7 @@
                 </div>
                 <div id="cutTwoB" class="catButs" onclick="ChangeCut('CutTwo')">
                             <div class="icon">
-                                <img src="../svgs/Mango/Mango_cube.svg" class="svgicon iconSizeIncrease" id="cutTwoIcon">
+                                <img src="" class="svgicon iconSizeIncrease" id="cutTwoIcon">
                             </div>
                             <span class="text" id="cutTwoText">
                                     Cube
